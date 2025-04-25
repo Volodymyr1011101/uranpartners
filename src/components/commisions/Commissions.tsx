@@ -1,13 +1,15 @@
 import Image from "next/image";
+import {Oswald} from "next/font/google";
 
+const oswald = Oswald({subsets: ['latin']})
 const Commissions = () => {
     const content = [
         {
-            title: 'Revenue Share Up to <span style="font-family: initial">50%</span>',
+            title: `Revenue Share Up to <span class=${oswald.className}>50%</span>`,
             description: 'More traffic, more earnings — it\'s that simple. No negative carryover. No hidden conditions'
         },
         {
-            title: "CPA Deals Up to <span style=\"font-family: initial\">500</span> EUR per player",
+            title: `CPA Deals Up to <span  class=${oswald.className}>500</span> EUR per player`,
             description: 'Optimized for high-performance affiliates focused on fast ROI'
         },
         {

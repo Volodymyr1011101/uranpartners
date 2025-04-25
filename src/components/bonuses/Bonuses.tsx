@@ -1,4 +1,7 @@
 import Image from "next/image";
+import {Oswald} from "next/font/google";
+
+const oswald = Oswald({subsets: ['latin']})
 
 const Bonuses = () => {
     const youGet = [
@@ -15,7 +18,7 @@ const Bonuses = () => {
             images: '/images/bonusesBorder.webp'
         },
         {
-            title: '<span style="font-family: initial">24/7</span> support',
+            title: `<span class=${oswald.className}>24/7</span> support`,
             images: '/images/bonusesBorder.webp'
         }
     ]

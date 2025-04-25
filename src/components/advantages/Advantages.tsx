@@ -25,7 +25,7 @@ const Advantages = () => {
     ]
     return (
         <div className={`px-6 pt-[24px] m-auto md:px-10 lg:px-14 xl:px-25 2xl:px-[248px] relative `} id={`advantages`}>
-            <Image src={'/images/fantasy.png'} alt={'background'} width={2050} height={1367} className={`absolute left-0 top-[-28vw] 2xl:top-[-30vw] hidden xl:block`}/>
+            <Image src={'/images/fantasy2.png'} alt={'background'} width={2050} height={1367} className={`absolute left-0 top-[-28vw] 2xl:top-[-30vw] hidden xl:block`}/>
             <h2 className={`odyssey text-[35px] uppercase text-center text-white xl:mb-[68px]`}>
                 our advantages
             </h2>
