@@ -2,6 +2,7 @@
 import './styles.scss'
 import {useEffect} from "react";
 const FAQ = () => {
+
     const content = [
         {
             title: 'Who are Uranus Partners?',
