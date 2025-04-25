@@ -1,7 +1,6 @@
 'use client'
 import './styles.scss'
 import {useEffect} from "react";
-import Image from "next/image";
 const FAQ = () => {
     const content = [
         {

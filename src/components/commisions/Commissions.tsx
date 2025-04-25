@@ -2,6 +2,7 @@ import Image from "next/image";
 import {Oswald} from "next/font/google";
 
 const oswald = Oswald({subsets: ['latin']})
+
 const Commissions = () => {
     const content = [
         {
