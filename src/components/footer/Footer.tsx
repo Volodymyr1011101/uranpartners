@@ -11,7 +11,7 @@ const Footer = () => {
                 <p className="text-white">
                     &copy; 2025 Uranus Partners. All rights reserved.
                 </p>
-                <Link href="/" target="_blank" rel="noopener noreferrer" className={`text-[#FF7700] underline`}>
+                <Link href="/terms_and_conditions" target="_blank" rel="noopener noreferrer" className={`text-[#FF7700] underline`}>
                     Terms & Conditions.
                 </Link>
             </div>
