@@ -13,7 +13,7 @@ export default function Home() {
             <Image src={`/images/slotMachineMiddle.webp`} alt={'icon'} width={300} height={300} className={`hidden xl:block absolute top-[65%] left-0 z-[2]`} />
             <Image src={`/images/sphereTop.webp`} alt={'icon'} width={238} height={238} className={`hidden xl:block absolute top-[83%] right-0 z-10`} />
             <Hero/>
-            <div className={`main-container pb-[380px] md:pb-[270px]`}>
+            <div className={`main-container pb-[420px] md:pb-[300px]`}>
                 <Advantages/>
                 <Commissions/>
                 <Bonuses/>
