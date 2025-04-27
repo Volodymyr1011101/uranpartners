@@ -23,10 +23,10 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
             </div>
             <nav className="nav">
                 <ul className="nav-list">
-                    <li onClick={() => handleActiveMenu()}><a href="#advantages" className="nav-item uppercase">Advantages</a></li>
-                    <li onClick={() => handleActiveMenu()}><a href="#commissions" className="nav-item uppercase">Commissions</a></li>
-                    <li onClick={() => handleActiveMenu()}><a href="#brand" className="nav-item uppercase">Our Brand</a></li>
-                    <li onClick={() => handleActiveMenu()}><a href="/faq" className="nav-item uppercase">FAQ</a></li>
+                    <li onClick={() => handleActiveMenu()}><Link href="/#advantages" className="nav-item uppercase">Advantages</Link></li>
+                    <li onClick={() => handleActiveMenu()}><Link href="/#commissions" className="nav-item uppercase">Commissions</Link></li>
+                    <li onClick={() => handleActiveMenu()}><Link href="/#brand" className="nav-item uppercase">Our Brand</Link></li>
+                    <li onClick={() => handleActiveMenu()}><Link href="/faq" className="nav-item uppercase">FAQ</Link></li>
                     <li onClick={() => handleActiveMenu()}><a href="#connect" className="nav-item uppercase">Contact Us</a></li>
                 </ul>
                 <div className="cta-btn">
