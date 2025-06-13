@@ -44,7 +44,6 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
                 <a href="https://dashboard.uranpartners.com/partner/register" target={`_blank`} className={`text-[#fff] no-underline py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10 bg-[#FF7700]`}>Register</a>
                 <a href="https://dashboard.uranpartners.com/partner/login" target={`_blank`} className={`text-[#fff] no-underline border border-solid py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10`}>login</a>
             </div>
-
         </header>
     );
 };
