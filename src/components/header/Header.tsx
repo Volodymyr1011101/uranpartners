@@ -30,8 +30,8 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
                     <li onClick={() => handleActiveMenu()}><a href="#connect" className="nav-item uppercase">Contact Us</a></li>
                 </ul>
                 <div className="cta-btn">
-                    <a href="#" target={`_blank`} className={`text-[#fff] no-underline py-[16px] px-10 bg-[#FF7700]`}>Register</a>
-                    <a href="#" target={`_blank`} className={`text-[#fff] no-underline border border-solid py-[16px] px-[52px]`}>login</a>
+                    <a href="https://dashboard.uranpartners.com/partner/register" target={`_blank`} className={`text-[#fff] no-underline py-[16px] px-10 bg-[#FF7700]`}>Register</a>
+                    <a href="https://dashboard.uranpartners.com/partner/login" target={`_blank`} className={`text-[#fff] no-underline border border-solid py-[16px] px-[52px]`}>login</a>
                 </div>
             </nav>
             </div>
@@ -41,8 +41,8 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
                 <span className="line bottom"></span>
             </div>
             <div className={`uppercase hidden xl:flex gap-[41px]`}>
-                <a href="#" target={`_blank`} className={`text-[#fff] no-underline py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10 bg-[#FF7700]`}>Register</a>
-                <a href="#" target={`_blank`} className={`text-[#fff] no-underline border border-solid py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10`}>login</a>
+                <a href="https://dashboard.uranpartners.com/partner/register" target={`_blank`} className={`text-[#fff] no-underline py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10 bg-[#FF7700]`}>Register</a>
+                <a href="https://dashboard.uranpartners.com/partner/login" target={`_blank`} className={`text-[#fff] no-underline border border-solid py-[10px] px-[28px] 2xl:py-[16px] 2xl:px-10`}>login</a>
             </div>
         </header>
     );
