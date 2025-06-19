@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className={`uppercase text-[#FF7700] text-center  text-[22px]  text-shadow-lg/30 odyssey title`}>
                 Turn Traffic Into Gold With Us
             </h1>
-                <a href="#" className={`text-[#fff] uppercase py-[13px] px-[34px] bg-[#FF7700] odyssey text-[18px] m-auto lg:py-[19px] lg:px-50px`}> join uranus partners</a>
+                <a href="https://dashboard.uranpartners.com/partner/register" className={`text-[#fff] uppercase py-[13px] px-[34px] bg-[#FF7700] odyssey text-[18px] m-auto lg:py-[19px] lg:px-50px`} target={'_blank'}> join uranus partners</a>
             </div>
         </div>
     )
