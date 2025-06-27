@@ -4,6 +4,7 @@ import Commissions from "@/components/commisions/Commissions";
 import Profit from "@/components/profit/Profit";
 import Bonuses from "@/components/bonuses/Bonuses";
 import Image from "next/image";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                 <Advantages/>
                 <Commissions/>
                 <Bonuses/>
+                <Testimonials/>
             </div>
         </main>
     );
