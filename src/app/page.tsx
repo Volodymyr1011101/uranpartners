@@ -5,6 +5,12 @@ import Profit from "@/components/profit/Profit";
 import Bonuses from "@/components/bonuses/Bonuses";
 import Image from "next/image";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Uranpartners',
+    description: 'Let’s grow together — and earn like never before',
+}
 
 export default function Home() {
     return (
