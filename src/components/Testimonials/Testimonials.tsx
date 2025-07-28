@@ -1,4 +1,6 @@
+'use client'
 import Card from "@/components/Testimonials/Card";
+import SwiperComponent from "@/components/swiper/SwiperComponent";
 
 const Testimonials = () => {
     return (
@@ -6,8 +8,6 @@ const Testimonials = () => {
             <h2 className={`uppercase font-[400] text-[#FF7700] text-[35px] odyssey text-center`}>
                 testimonials
             </h2>
-
-            <Card/>
         </div>
     )
 }
