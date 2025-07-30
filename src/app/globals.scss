@@ -470,6 +470,30 @@ body, html {
 
 .slider {
     position: relative;
+    max-width: 1780px;
+    margin: 0 auto;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: #000000;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        z-index: 3;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        background: #000000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        z-index: 3;
+    }
 }
 
 .card-text {
@@ -477,4 +501,127 @@ body, html {
     -webkit-line-clamp: 4; /* кількість рядків */
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.prev-slide {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 500px) {
+        top: -60px;
+        left: 40px;
+        transform: none;
+    }
+}
+
+.next-slide {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    transform: translateY(-50%) scale(-1);
+    right: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+    @media screen and (max-width: 500px) {
+        top: -60px;
+        right: 40px;
+        transform: scale(-1);
+    }
+}
+
+.line {
+    background: #FF7700;
+    border-radius: 30px;
+    position:  absolute;
+    left: 0;
+}
+
+.middle-arrow-line {
+    width: 50px;
+    height: 6.75px;
+}
+
+.top-arrow-line {
+    width: 40px;
+    height: 6.75px;
+    top: -12px;
+    transform: rotate(-45deg);
+    left: -7px;
+}
+
+.bottom-arrow-line {
+    width: 40px;
+    height: 6.75px;
+    top: 12px;
+    transform: rotate(45deg);
+    left: -7px;
+}
+
+.additional-line {
+    width: 16px;
+    right: -75px;
+    left: initial;
+    height: 6.75px;
+}
+.active {
+    animation: push .4s both ease-in-out;
+}
+.arrow-active {
+    animation: push-arrow .5s both ease-in-out;
+    animation-delay: .1s;
+}
+
+.arrow-middle-active {
+    animation: push-arrow-middle .5s both ease-in-out;
+    animation-delay: .1s;
+}
+
+@keyframes push {
+    0%{
+        width: 16px;
+        right: -75px;
+        height: 6.75px;
+    }
+    50% {
+        width: 16px;
+        right: -65px;
+        height: 6.75px;
+    }
+    100%{
+        width: 16px;
+        right: -75px;
+        height: 6.75px;
+    }
+}
+
+@keyframes push-arrow {
+    0%{
+        left: -7px;
+    }
+    50% {
+        left: -15px;
+    }
+    100% {
+        left: -7px;
+    }
+}
+
+@keyframes push-arrow-middle {
+    0%{
+        left: 0;
+    }
+    50% {
+        left: -8px;
+    }
+    100% {
+        left: 0;
+    }
 }

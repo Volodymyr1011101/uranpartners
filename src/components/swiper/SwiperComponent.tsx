@@ -1,27 +1,34 @@
 'use client'
 import {Swiper, SwiperSlide} from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import type { Swiper as SwiperClass } from 'swiper';
+import {Navigation, Pagination, Scrollbar, A11y} from 'swiper/modules';
+import type {Swiper as SwiperClass} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Card from "@/components/Testimonials/Card";
-import { useState} from "react";
+import {useRef, useState} from "react";
+import SliderButton from "@/components/sliderButton/SliderButton";
+
 const SwiperComponent = () => {
     const [swiper, setSwiper] = useState<SwiperClass | null>(null);
+    const slideNext = () => {
+        swiper?.slideNext();
+    }
+    const sliderPrev = () => {
+        swiper?.slidePrev();
+    }
+
     return (
         <div className="px-6 slider">
-            {/*<div className="text-white" onClick={() => swiper?.slidePrev(303)}>*/}
-            {/*    prev*/}
-            {/*</div>*/}
+            <SliderButton sliderClick={sliderPrev} side={'prev'}/>
             <Swiper
                 // modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={30}
                 slidesPerView={1}
                 // navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
+                loop={true}
+                pagination={{clickable: true}}
+                scrollbar={{draggable: true}}
                 onSwiper={(swiper) => setSwiper(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
@@ -36,10 +43,21 @@ const SwiperComponent = () => {
             >
                 {comments.map(item => (
                     <SwiperSlide>
-                        <Card image={item.imageRef} link={item.linkRef} linkText={item.linkText} text={item.comment} />
+                        <Card image={item.imageRef} link={item.linkRef} linkText={item.linkText} text={item.comment}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <SliderButton sliderClick={slideNext} side={'next'}/>
+
+            {/*<div className="text-white next-slide" onClick={() => {*/}
+            {/*    swiper?.slideNext(300)*/}
+            {/*    setAnimation()*/}
+            {/*}} >*/}
+            {/*    <span className={`top-arrow-line line ${active ? 'arrow-active' : ''}`}/>*/}
+            {/*    <span className={`middle-arrow-line line ${active ? 'arrow-middle-active' : ''}`}/>*/}
+            {/*    <span className={`bottom-arrow-line line ${active ? 'arrow-active' : ''}`}/>*/}
+            {/*    <span className={`additional-line line ${active ? 'active' : ''}`}/>*/}
+            {/*</div>*/}
         </div>
 
     )
