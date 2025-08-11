@@ -10,7 +10,7 @@ const Bonuses = () => {
             images: '/images/bonusesBorder.webp'
         },
         {
-            title: 'fats payouts',
+            title: 'fast payouts',
             images: '/images/bonusesBorder.webp'
         },
         {

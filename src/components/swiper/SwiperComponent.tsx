@@ -75,8 +75,8 @@ const comments = [
     },
     {
         imageRef: 'TypedeWhiteYes1.png',
-        linkRef: 'https://mblizard.ca',
-        linkText: 'www.mblizard.ca',
+        linkRef: 'http://gamblizard.ca/fr',
+        linkText: 'www.gamblizard.ca',
         comment: 'Our collaboration with Uran Partners has exceeded expectations. The team is proactive, results-driven, and always available. It’s rare to find such consistency and transparency.'
     },
     {

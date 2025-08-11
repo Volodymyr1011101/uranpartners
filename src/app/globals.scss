@@ -498,9 +498,10 @@ body, html {
 
 .card-text {
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* кількість рядків */
+    -webkit-line-clamp: 3; /* кількість рядків */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 15px;
 }
 
 .prev-slide {

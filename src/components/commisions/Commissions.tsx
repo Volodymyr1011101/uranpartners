@@ -19,7 +19,7 @@ const Commissions = () => {
         },
         {
             title: 'Special Offers & VIP Deals',
-            description: 'Exclusive promos and personalized terms. Have high-quality traffic or a large audience? Get in touch for exclusive conditions and boosted commissions'
+            description: 'Exclusive promos and personalized terms.Have high-quality traffic or a large audience? Get in touch for exclusive conditions and boosted commissions'
         }
     ]
     return (
@@ -34,7 +34,7 @@ const Commissions = () => {
                            <Image src={'/images/btnBorder.webp'} alt={'border'} width={635} height={169} className={`absolute w-[100%] h-[100%]`}/>
                            <h3 className={`text-white odyssey uppercase text-[24px] w-[fit-content] comm py-[30px] px-6 text-center xl:-text-[32px] 2xl:text-[36px] 3xl:text-[48px]`} dangerouslySetInnerHTML={{ __html: item.title }}></h3>
                        </div>
-                       <p className={`text-[#888888] text-[15px]`}>{item.description}</p>
+                       <p className={`text-[#888888] text-[15px] leading-[22px] xl:leading-[26px]`}>{item.description}</p>
                    </div>
                ))}
            </div>
